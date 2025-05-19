@@ -206,7 +206,7 @@ button:hover {
 
 .game-item:hover {
   background-color: #00ffd5;
-  color: #000;
+  color: #fff;
   box-shadow: 0 0 15px #00ffd5;
 }
 
