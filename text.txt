@@ -1,0 +1,23 @@
+CMD:v(playerid, params[])
+{
+    new vehicleid;
+
+    if(sscanf(params, "d", vehicleid))
+        return SendClientMessage(playerid, -1, "Penggunaan: /v [vehicleid]");
+
+    if(vehicleid < 400 || vehicleid > 611)
+        return SendClientMessage(playerid, -1, "ID kendaraan tidak valid! (400 - 611)");
+
+    new Float:x, Float:y, Float:z, Float:a;
+    GetPlayerPos(playerid, x, y, z);
+    GetPlayerFacingAngle(playerid, a);
+
+    new vehicle = CreateVehicle(vehicleid, x + 2.0, y, z, a, -1, -1, 600);
+    PutPlayerInVehicle(playerid, vehicle, 0);
+
+    new msg[64];
+    format(msg, sizeof(msg), "Kamu telah membuat kendaraan ID: %d", vehicleid);
+    SendClientMessage(playerid, -1, msg);
+    
+    return 1;
+}

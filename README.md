@@ -1,1 +1,1 @@
-# ahmadstore.
+copyright @ahmadstors
