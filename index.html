@@ -37,12 +37,6 @@
     </div>
 </head>
 <body>
-
-<div class="toolbar">
-  <input type="text" id="searchInput" placeholder="Cari game...">
-  <button id="darkModeToggle">Dark Mode</button>
-</div>
-
   <button class="yahiko" id="unmuteBtn">MUSIC</button>
 
   <audio id="myAudio" src="dj.mp3" autoplay muted loop></audio>
@@ -294,24 +288,6 @@
         function goToInfo(game) {
             window.location.href = `info.html?game=${encodeURIComponent(game)}`;
         }
-        // DARK MODE TOGGLE
-  const toggle = document.getElementById("darkModeToggle");
-  toggle.addEventListener("click", () => {
-    document.body.classList.toggle("dark-mode");
-    toggle.textContent = document.body.classList.contains("dark-mode") ? "Light Mode" : "Dark Mode";
-  });
-
-  // SEARCH GAME
-  const searchInput = document.getElementById("searchInput");
-  searchInput.addEventListener("input", function () {
-    const filter = this.value.toLowerCase();
-    const gameItems = document.querySelectorAll(".game-item");
-
-    gameItems.forEach(item => {
-      const title = item.querySelector(".judul-produk").textContent.toLowerCase();
-      item.style.display = title.includes(filter) ? "block" : "none";
-    });
-  });
     </script>
 <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
 <script src="script.js"></script>
