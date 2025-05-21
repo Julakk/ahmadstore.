@@ -1,17 +1,22 @@
 body {
-  margin: 0;
-  font-family: 'Poppins', sans-serif;
-  background: linear-gradient(to bottom, #0d0d22, #1a1a2e);
-  color: #fff;
+    font-family: Bold, sans-serif;
+    text-align: center;
+    background-color: rgba(12, 12, 12, 0.959);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 52.5%;
+    margin: 0;
+    position: relative;
 }
-
 header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background: #12003e;
-  padding: 10px 20px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 20px;
+    background-color: aqua;
+    box-shadow: 0px 4px 10px rgba(201, 199, 199, 0.1);
+    font-weight: bold;
+    top: 0;
 }
 
 .swiper {
@@ -25,13 +30,17 @@ header {
 }
 
 .logo {
-  display: flex;
-  align-items: center;
+    display: flex;
+    --flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    padding: 15px;
+    margin-left: -10px;
 }
-
 .logo img {
-  height: 40px;
-  margin-right: 10px;
+    height: 50px; /* Sesuaikan ukuran logo */
+    border-radius: 50px;
 }
 
 .nama {
@@ -90,7 +99,7 @@ nav ul li a {
     margin-bottom: 5px;
     margin-top: 50px;
     margin-left: 95vh;
-    background: #a5a3a4;
+    background: aqua;
     border-radius: 15px;
     padding: 10px;
     width: 10%;
@@ -133,7 +142,7 @@ button {
 
 .yahiko {
     background: #4400ff;
-    color: white;
+    color:#1e1e2f;
     padding: 10px;
     width: 10%;
     border: none;
@@ -175,27 +184,36 @@ button:hover {
 }
 
 .games {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
-  gap: 20px;
-  padding: 20px;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    margin: 50px auto;
+    --margin-top: 5px;
+    margin-left: 160vh;
 }
 
 .game-item {
-  background: #220050;
-  border-radius: 16px;
-  text-align: center;
-  transition: transform 0.2s, box-shadow 0.3s;
+    display: grid;
+    background: #1e1e2f;
+    padding: 10px;
+    border-radius: 20px;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.3s;
 }
 
 .game-item:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+  background-color: aqua;
+  color: #000;
+  box-shadow: 0 0 15px aqua;
 }
 
 .game-item img {
-  width: 100%;
-  border-radius: 16px 16px 0 0;
+    width: 100px;
+    height: 100px;
+    margin-bottom: 5px;
 }
 
 .populer
@@ -216,21 +234,10 @@ button:hover {
 }
 
 footer {
-  background: #100025;
-  padding: 20px;
-  text-align: center;
-  color: #ccc;
-}
-
-.sosmed img {
-  width: 30px;
-  margin: 0 8px;
-  transition: transform 0.3s;
-}
-
-.sosmed img:hover {
-  transform: scale(1.2);
-}
+      background-color: #000;
+      text-align: center;
+      padding: 30px 20px;
+    }
 
     .sosmed h1 {
       font-size: 18px;
@@ -250,39 +257,45 @@ footer {
     }
 
     .copyright a {
-      color: #00ffd5;
+      color: aqua;
       text-decoration: none;
     }
 
-.tentang {
-  background: #180034;
-  padding: 30px;
-  text-align: center;
-}
-
-.tentang h1 {
-  color: #00e0ff;
-  font-size: 24px;
+.tentang
+{
+    display: grid;
+    justify-content: center;
+    margin-top: 10%;
+    font-size: 15pt;
 }
 
 .card
 {
-    background-color: #fff;
+    background-color: aqua;
     padding: 1%;
     border-radius: 10px;
-    box-shadow: 20px 20px black;
+    box-shadow: 20px 20px #4400ff;
 }
 
-.title {
-  color: #00e0ff;
-  font-size: 22px;
-  text-decoration: none;
-  font-weight: bold;
+.title
+{
+    color: #4400ff;
+    border-bottom: 1px solid var(--white);
+    font-size: 15pt;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-bottom: 1rem;
+    font-weight: 600;
+    border-radius: 10px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
 }
  
 .card h1
 {
     --text-align: center;
+    color: #000;
+    font-family: serif;
 }
 
 @media screen and (max-width : 600px) {
@@ -292,7 +305,7 @@ footer {
         align-items: center;
         justify-content: space-between;
         padding: 4px 4px;
-        background-color: #4400ff;
+        background-color: #000;
         box-shadow: 0px 4px 10px rgba(201, 199, 199, 0.1);
         position: sticky;
         block-size: 5cap;
@@ -317,22 +330,28 @@ footer {
         display: flex;
     }
 
-.yahiko {
-  position: fixed;
-  top: 20px;
-  right: 20px;
-  background: #00e0ff;
-  color: #000;
-  padding: 10px 16px;
-  border: none;
-  border-radius: 8px;
-  font-weight: bold;
-  cursor: pointer;
-}
+    .yahiko {
+    background: aqua;
+    color: #000;
+    padding: 10px;
+    width: 20%;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 15px;
+    font-style: Arial;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+
+    .judul-produk {
+    background: none;
+    color: #fff;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
 
     .game-item {
     display: grid;
-    background: #4400ff;
+    background: #1e1e2f;
     padding: 10px;
     border-radius: 20px;
     text-align: center;
@@ -341,9 +360,9 @@ footer {
     }
 
     .game-item:hover {
-    background-color: #00ffd5;
+    background-color: aqua;
     color: #000;
-    box-shadow: 0 0 15px #00ffd5;
+    box-shadow: 0 0 15px aqua;
     }
 
     .game-item img {
@@ -359,13 +378,6 @@ footer {
     .store {
         font-size: 15pt;
     }
-    
-  .judul-produk {
-  padding: 10px;
-  font-weight: bold;
-  font-size: 14px;
-  color: #fff;
-}
     
     .hdjudul {
         font-size: 10pt;
@@ -411,7 +423,7 @@ footer {
         margin-bottom: 5px;
         margin-top: 50px;
         margin-left: 21vh;
-        background: #a5a3a4;
+        background: #007bff;
         border-radius: 15px;
         padding: 10px;
         width: 10%;
@@ -429,11 +441,14 @@ footer {
         margin-right: 5%;
     }
 
-  .tentang {
-  background: #000;
-  padding: 30px;
-  text-align: center;
-}
+    .tentang
+    {
+        display: grid;
+        justify-content: center;
+        margin-top: 10%;
+        font-size: 10pt;
+        margin-right: 5%;
+    }
     .games {
         display: grid;
         justify-content: center;
@@ -454,7 +469,10 @@ footer {
 }
 
 .wrap {
-  margin-top: 20px;
+    max-width: 1100px;
+    margin: auto;
+    padding-left: 2rem;
+    padding-right: 2rem;
 }
 @media screen and (max-width:600px) {
    .swiper {
@@ -513,13 +531,15 @@ footer {
 
 /* Hero Section */
 .hero-content {
-  text-align: center;
-  margin: 30px auto;
+    flex: 1;
 }
 
 .hero-content h1 {
-  font-size: 28px;
-  color: #fff;
+    font-size: 48px;
+    margin-bottom: 16px;
+    transition: text-shadow 0.3s ease;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .hero-content h1:hover {
@@ -527,8 +547,12 @@ footer {
 }
 
 .hero-content h2 {
-  font-size: 20px;
-  color: #00e0ff;
+    color: var(--primary);
+    font-size: 24px;
+    margin-bottom: 16px;
+    transition: text-shadow 0.3s ease;
+    color: aqua;
+    font-family: cursive;
 }
 
 .hero-content h2:hover {
@@ -562,44 +586,3 @@ footer {
     font-size: 36px;
 }
 
-.toolbar {
-  display: flex;
-  justify-content: center;
-  gap: 10px;
-  margin: 20px;
-  flex-wrap: wrap;
-}
-
-.toolbar input {
-  padding: 10px;
-  width: 200px;
-  border-radius: 8px;
-  border: none;
-  outline: none;
-}
-
-.toolbar button {
-  background-color: #00e0ff;
-  border: none;
-  color: #000;
-  padding: 10px 15px;
-  border-radius: 8px;
-  font-weight: bold;
-  cursor: pointer;
-}
-
-body.dark-mode {
-  background: #111;
-  color: #ddd;
-}
-
-body.dark-mode header,
-body.dark-mode footer,
-body.dark-mode .tentang,
-body.dark-mode .game-item {
-  background: #222 !important;
-}
-
-body.dark-mode .judul-produk {
-  color: #fff;
-}
