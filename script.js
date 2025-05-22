@@ -241,29 +241,13 @@ document.addEventListener("DOMContentLoaded", function () {
                 { value: "Membership Bulanan 1x", price: 95160 },
                 { value: "5 Diamond", price: 1917 },
                 { value: "10 Diamond", price: 2827 },
-                { value: "50 Diamond", price: 8958 },
-                { value: "70 Diamond", price: 10988 },
-                { value: "120 Diamond", price: 19980 },  
+                { value: "70 Diamond", price: 11539 },
+                { value: "100 Diamond", price: 15573 },
+                { value: "120 Diamond", price: 17611 },  
                 { value: "140 Diamond", price: 19214 },
                 { value: "190 Diamond", price: 26528 },
                 { value: "210 Diamond", price: 30800 },
-                { value: "280 Diamond", price: 37531 },
-                { value: "355 Diamond", price: 47661 },
-                { value: "405 Diamond", price: 57981 },
-                { value: "425 Diamond", price: 59591 },
-                { value: "475 Diamond", price: 66990 },
-                { value: "495 Diamond", price: 69890 },
-                { value: "565 Diamond", price: 75555 },
-                { value: "545 Diamond", price: 76590 },
-                { value: "635 Diamond", price: 84234 },
-                { value: "720 Diamond", price: 97490 },
-                { value: "770 Diamond", price: 103990 },
-                { value: "860 Diamond", price: 111690 },
-                { value: "930 Diamond", price: 120880 },
-                { value: "1000 Diamond", price: 135680 },
-                { value: "1075 Diamond", price: 138995 },
-                { value: "1440 Diamond", price: 210790 },
-               { value: "7290 Diamond", price: 1230550 }  
+                { value: "280 Diamond", price: 37531 }
       ],
       "Arena Of Valor": [
                 { value: "40 AOV Vouchers", price: 15000 },
@@ -433,18 +417,36 @@ document.addEventListener("DOMContentLoaded", function () {
      "Mobile Legends PH": [
               { value: "11 Diamonds (10 + 1 Bonus)", price: 4635 },
               { value: "56 Diamonds (51 + 5 Bonus)", price: 15519 },
-              { value: "279 Diamonds (254 + 25 Bonus)", price: 66730 },
-              { value: "570 Diamonds (504 + 66 Bonus)", price: 131451 },
-              { value: "1163 Diamonds (1007 + 156 Bonus)", price: 260894 },
-              { value: "Weekly Diamond Pass (Event Topup +100)", price: 27597 },
-              { value: "5 Diamonds (5 + 0 Bonus)", price: 2960 },
-              { value: "22 Diamonds (20 + 2 Bonus)", price: 6657 },
-              { value: "112 Diamonds (102 + 10 Bonus)", price: 27859 },
-              { value: "168 Diamonds (153 + 15 Bonus)", price: 40876 },
-              { value: "223 Diamonds (203 + 20 Bonus)", price: 79816 },
-              { value: "1733 Diamonds (1511 + 222 Bonus)", price: 390255 },
-              { value: "2398 Diamonds (2015 + 383 Bonus)", price: 527693 },
-              { value: "6042 Diamonds (5035 + 1007 Bonus)", price: 1321876 }
+              { value: "279 Diamonds ( 254 + 25 Bonus )", price: 66730 },
+              { value: "284 Diamonds (254 + 30 Bonus)", price: 77495 },
+              { value: "569 Diamond (510 + 59 Bonus)", price: 153958 },
+              { value: "1145 Diamonds (1016 + 129 Bonus)", price: 312522 },
+              { value: "Weekly Diamond Pass (Event Topup +100)", price: 35261 },
+              { value: "Twilight Pass", price: 165198 },
+              { value: "28 Diamonds (26 + 2 Bonus)", price: 9937 },
+              { value: "42 Diamonds (38 + 4 Bonus)", price: 13548 },
+              { value: "140 Diamonds (127 + 13 Bonus)", price: 39644 },
+              { value: "168 Diamonds (154 + 14 Bonus)", price: 47140 },
+              { value: "355 Diamonds (317 + 38 Bonus)", price: 96421 },
+              { value: "429 Diamonds (383 + 46 Bonus)", price: 115264 },
+              { value: "716 Diamonds (633 + 83 Bonus)", price: 190759 },
+              { value: "1084 Diamonds (940 + 144 Bonus)", price: 285310 }
+     ],
+     "ZEPETO": [
+              { value: "Premium 1M", price: 54590 },
+              { value: "7 ZEMS", price: 7990 },
+              { value: "14 ZEMS", price: 16690 },
+              { value: "28 ZEM", price: 30572 },
+              { value: "58 ZEMS", price: 58850 },
+              { value: "128 ZEMS", price: 125595 },
+              { value: "323 ZEMS", price: 315135 },
+              { value: "1000 ZEMS", price: 933585 },
+              { value: "4680 Coins", price: 16660 },
+              { value: "9700 Coins", price: 30570 },
+              { value: "25200 Coins", price: 72995 },
+              { value: "40700 Coins", price: 116493 },
+              { value: "110000 Coins", price: 310972 },
+              { value: "300000 Coins", price: 818972 }
      ],
     };
     let selectedPrice = null;
@@ -504,7 +506,7 @@ const swiper = new Swiper('.swiper', {
   const texts = [
         " DISCORD",
         "WHATSHAPP",
-        "INSTAGRAM"
+        "TELEGRAM"
     ]
 
     let speed = 100;
