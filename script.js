@@ -504,9 +504,10 @@ const swiper = new Swiper('.swiper', {
   });
 
   const texts = [
-        " DISCORD",
-        "WHATSHAPP",
-        "TELEGRAM"
+        "INSTAGRAM",
+        "TIKTOK",
+        "DISCORD",
+        "YOUTUBE"
     ]
 
     let speed = 100;
